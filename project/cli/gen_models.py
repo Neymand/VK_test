@@ -8,10 +8,7 @@ import click
               help='Output directory for the generated models.')
 
 def gen_models(json_schema, out_dir):
-    """
-    A CLI tool to generate models from a JSON schema.
-    """
-    # Ваша логика для генерации моделей.
+    # логика для генерации моделей.
     out_dir += 'models.py'
 
     pars_obj = Parsing(json_schema, out_dir)
